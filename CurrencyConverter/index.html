@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyConverter</title>
+    <link rel="icon" href="titleicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referreerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="head">Currency Converter</h1>
+
+        <form action="" class="Form">
+            <div class="EAmount">
+                <p>Enter Amount</p>
+                <input type="number" id="amount" name="amount" value="10">
+            </div>
+            <div class="From-To">
+                <div class="From">
+                    <lable for="From">From</lable><br>
+                    <div class="select-container"><img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from" id="" selected>
+
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="TO">
+                    <lable for="To">TO</lable><br>
+                    <div class="select-container"><img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" id="">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="convertMessage">1 USD=1 INR</div>
+        </form>
+        <p class="updated-date"></p>
+    </div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>

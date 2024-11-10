@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #edede9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background-color: #ced4da;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+#amount {
+  max-width: 15rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+.From-To {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.Form {
+  border: 0px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: left;
+  gap: 1rem;
+}
+i {
+  margin-top: 1rem;
+  font-size: 2.6rem;
+}
+.From-To img {
+  margin-left: 0px;
+  height: 3rem;
+}
+
+.select-container {
+  border: 1px solid black;
+  padding-left: 0px;
+  border-radius: 0.5rem;
+  display: flex;
+}
+.select-container select {
+  background-color: #ced4da;
+  font-size: 1rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 0px;
+  border: none;
+  outline: none;
+  text-align: left;
+  text-align-last: right;
+}
+
+select option {
+  display: flex;
+  justify-items: right;
+}
+.convertMessage {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.Submit {
+  place-self: center;
+}
+.Submit button {
+  background-color: rgb(42, 165, 163);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.Submit button:hover {
+  border: 2px solid rgb(71, 198, 196);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0)
+  );
+}
+.updated-date {
+  font-size: 0.8rem;
+  font-style: italic;
+  position: relative;
+  margin-left: auto;
+  margin-top: 10px;
+}
+@media screen and (max-width: 480px) {
+  .main {
+    width: 95vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .From-To {
+    scale: 0.8;
+  }
+  .select-container select {
+    width: 90vw;
+  }
+  .convertMessage {
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+}
